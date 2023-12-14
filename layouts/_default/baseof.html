@@ -9,6 +9,8 @@
 </head>
 <body>
     {{ block "header" . }} {{ partial "header.html" . }} {{end}}
-    {{block "main" .}}{{end}}
+    <div class="flex flex-row px-10">
+        {{block "main" .}}{{end}}
+    </div>
 </body>
 </html>

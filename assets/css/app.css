@@ -621,14 +621,6 @@ video {
   width: 100%;
 }
 
-.hover\:fill-nike-hover-link:hover {
-  fill: #757575;
-}
-
-.hover\:stroke-nike-hover-link:hover {
-  stroke: #757575;
-}
-
 .hover\:text-nike-hover-link:hover {
   --tw-text-opacity: 1;
   color: rgb(117 117 117 / var(--tw-text-opacity));
