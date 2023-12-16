@@ -1,5 +1,7 @@
 import axios from "../node_modules/axios/index";
 
+axios
+
 
 interface Starwars {
     name?: string, 
