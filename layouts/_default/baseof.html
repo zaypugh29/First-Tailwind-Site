@@ -12,5 +12,8 @@
     <div class="flex flex-row px-10">
         {{block "main" .}}{{end}}
     </div>
+
+    {{ $js := resources.Get "js/app/app.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>
