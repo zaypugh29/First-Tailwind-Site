@@ -13,7 +13,10 @@
         {{block "main" .}}{{end}}
     </div>
 
-    {{ $js := resources.Get "js/app/app.js" | minify | fingerprint }}
+    {{ $js := resources.Get "node_modules/axios/dist/axios.min.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}"></script>
+    {{ $js := resources.Get "js/app.js" | minify | fingerprint }}
+    <script type="module" src="{{ $js.RelPermalink }}"></script>
+    
 </body>
 </html>
