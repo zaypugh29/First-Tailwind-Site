@@ -22,6 +22,6 @@ interface Starwars {
 const getInfo = async () => {
     const resp = (await axios.get<Starwars>('https://swapi.dev/api/people')).data;
     console.log(resp);
-} 
+};
 
-// getInfo();
+getInfo();
